@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klook Travel - Activities, tours, attractions and things to do</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!--    Date range-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+</head>
+<body>
+
+<!-- Navbar -->
+<section class="nav-wrap ios-crystal-bg">
+    <div class="nav-container">
+        <nav class="navbar bg-faded">
+            <div class="container">
+                <ul class="nav pull-sm-left">
+                    <li class="nav-item">
+                        <a class="nav-link nav-logo" href="index.html">Klook</a>
+                    </li>
+
+                </ul>
+                <ul class="nav nav-mid">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pakeges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Destination</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blogs</a>
+                    </li>
+                </ul>
+                <ul class="nav pull-sm-right">
+                    <li class="nav-item">
+                        <a class="nav-link login-btn" data-toggle="modal" href="#loginModal">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#regModal" data-toggle="modal">Register</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+
+    </div>
+
+</section>
+
+<!-- Blog details -->
+<section class="blog-details">
+    <div class="blog-wrap">
+        <div class="blog-container container">
+            <div class="container">
+
+                <div class="row">
+
+                    <!-- Blog Entries Column -->
+                    <div class="col-md-8">
+
+                        <h2 class="my-4">
+                            TOP 15 PLACES TO VISIT IN THE PHILIPPINES
+                        </h2>
+
+                        <!-- Blog Post -->
+                        <div class="card mb-4">
+                            <img class="card-img-top" src="img/slide-2.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    The Pear of the Orient and one of the most visited country in Asia, people who has
+                                    visited are in awe of all the best places to visit in the Philippines! Check out
+                                    this post to learn more about it.
+                                </h5>
+                                <p class="card-text">
+                                    The Philippines as a country is graced by beautiful beaches, lovely weather and
+                                    excellent opportunities for island hopping, diving, and surfing. For years this
+                                    small yet surprisingly famous country has attracted a decent stream of travelers
+                                    from across the world. However, the state offers you a lot more than just snorkeling
+                                    and sand with many other tourist attractions in the Philippines. <br>
+                                    Besides the coastlines and beaches, there are plenty of places to visit in the
+                                    Philippines including mystical villages, smothering jungle peaks, ancient rice and
+                                    paddy fields, and highlights of Spanish churches. On a more closer look, you will
+                                    find the island to have a vibrant mix of cultures like American, Malay, Islamic and
+                                    Spanish in an array of celebrations, dazzling colonial towns and tantalizing food
+                                    with more resemblance to Latin America than Asia.
+                                </p>
+                                <img class="card-img-top" src="img/blog4.jpg" alt="">
+                                <p>
+                                    Filipinos welcome visitors with colorful fiestas held throughout the year based on
+                                    the Roman Catholic calendar with food heavily influenced by native and Spanish
+                                    traditions. With more than 7000 en-thralling island beauties to choose from, if you
+                                    have been planning your first or n-th Philippines travel, get ready for idyllic
+                                    hills of Batanes, breathtaking cascaded of Cebu Lake and much more.
+                                </p>
+                                <img class="card-img-top" src="img/blog-banner2.jpg" alt="">
+                                <p>
+                                    Many awestruck famous Philippines destinations are worthy to be included in your
+                                    travel bucket list. Whether you love the sun-kissed lazy beaches or historic sites,
+                                    you will get a complete sense of wanderlust in the Philippines.
+
+                                    There are famous cities in the Philippines like Cebu, Manila, etc. where travelers
+                                    can learn more about the development, mixed cultures or can find out about other
+                                    Philippines points of interest. To make your visit less confusing on selecting where
+                                    to go on this tropical hub, here’s the list of some of the most remarkable
+                                    sightseeing places to inspire you with a lovely start to your Filipino adventure.
+                                </p>
+                            </div>
+                            <div class="card-footer text-muted">
+                                Posted on January 1, 2020 by
+                                <a href="#">Start Bootstrap</a>
+                            </div>
+                        </div>
+
+                        <!-- Pagination -->
+                        <ul class="pagination justify-content-center mb-4">
+                            <li class="page-item">
+                                <a class="page-link" href="#">← Older</a>
+                            </li>
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#">Newer →</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <!-- Sidebar Widgets Column -->
+                    <div class="col-md-4">
+
+                        <!-- Search Widget -->
+                        <div class="card my-4">
+                            <h5 class="card-header">Search</h5>
+                            <div class="card-body">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search for...">
+                                    <span class="input-group-append">
+                                        <button class="btn btn-secondary" type="button">Go!</button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Categories Widget -->
+                        <div class="card my-4">
+                            <h5 class="card-header">Categories</h5>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <ul class="list-unstyled mb-0">
+                                            <li>
+                                                <a href="#">Web Design</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">HTML</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Freebies</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <ul class="list-unstyled mb-0">
+                                            <li>
+                                                <a href="#">JavaScript</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">CSS</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Tutorials</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Side Widget -->
+                        <div class="card my-4">
+                            <h5 class="card-header">Side Widget</h5>
+                            <div class="card-body">
+                                You can put anything you want inside of these side widgets. They are easy to use, and
+                                feature the new Bootstrap 4 card containers!
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- /.row -->
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Modal-->
+<div class="login-modal">
+    <div class="modal fade" id="loginModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header ios-crystal-bg">
+                    <span class="modal-title">Login</span>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="form-div">
+                        <form action="/action_page.php">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder=" E-Mail ">
+                            </div>
+                            <div class="">
+                                <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <a href="#forgetModal" data-toggle="modal" title="Reset Password">
+                                    <small>Forgot Password ?</small></a>
+                            </div>
+                            <button type="submit" class="btn btn-danger btn-block mybtn">Submit</button>
+
+                            <a href="#regModal" data-toggle="modal" title="Reset Password">
+                                <small>Want to Registration ?</small></a>
+
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="registration-modal">
+    <div class="modal fade" id="regModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <span class="modal-title">Registration</span>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="form-div">
+                        <form action="/action_page.php">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder=" E-Mail ">
+                            </div>
+                            <div class="form-group">
+                                <input type="phone" class="form-control" id="phone-number" placeholder="Phone ">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="confirm-pwd"
+                                       placeholder="Confirm Password">
+                            </div>
+
+                            <button type="submit" class="btn btn-danger btn-block mybtn">Submit</button>
+
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="forget-modal">
+    <div class="modal fade" id="forgetModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header ios-crystal-bgx">
+                    <span class="modal-title">Forget Password!</span>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="form-div">
+                        <form action="#">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder=" E-Mail ">
+                            </div>
+
+
+                            <button type="submit" class="btn btn-danger btn-block mybtn">Send Reset Link</button>
+
+
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--Modal End-->
+
+<!--Footer-->
+<section class="footer">
+    <footer class="bg-deep-dark">
+        <div class="container py-5">
+            <div class="row py-4">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <a href="index.html" class="nav-logo">Klook</a>
+                    <!--                    <img src="images/logo.png" alt="Klook logo" width="150" class="mb-3">-->
+                    <p class="font-italic text-white">
+                        Book flights, hotels, trains & rental cars anywhere in the world in just seconds. Get real-time
+                        flight updates, travel info, exclusive deals, and 30% more Trip Coins only!
+
+                    </p>
+                    <ul class="list-inline mt-4">
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank" title="twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank" title="facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank" title="instagram"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank" title="pinterest"><i class="fa fa-pinterest"></i></a></li>
+                        <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><i
+                                class="fa fa-vimeo"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h6 class="text-uppercase font-weight-bold mb-4">Company</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2">
+                            <a href="coming-soon.html" target="_blank">Terms and Condition</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="coming-soon.html" target="_blank">Terms of Use</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="coming-soon.html" target="_blank">Klook Guarantee</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="coming-soon.html" target="_blank">Privacy Policy</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="coming-soon.html" target="_blank">Career</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="coming-soon.html"
+                               target="_blank">Security</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h6 class="text-uppercase font-weight-bold mb-4">Useful Links</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="coming-soon.html">How It Works?</a></li>
+                        <li class="mb-2"><a href="coming-soon.html">Integrations</a></li>
+                        <li class="mb-2"><a href="coming-soon.html">Product Updates</a></li>
+                        <li class="mb-2"><a href="coming-soon.html">Our Pricing</a></li>
+                        <li class="mb-2"><a href="coming-soon.html">Offers</a></li>
+                        <li class="mb-2"><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-lg-0">
+                    <h6 class="text-uppercase font-weight-bold mb-4">Newsletter</h6>
+                    <p class="mb-4 text-white">For any important update, keep in touch. We don't share any info for
+                        company reputation.</p>
+                    <div class="p-1 roundedx bg-white">
+                        <div class="input-group">
+                            <input type="email" placeholder="Enter your email address" aria-describedby="button-addon1"
+                                   class="form-control border-0 shadow-0">
+                            <div class="input-group-append">
+                                <button id="button-addon1" type="submit" class="btn btn-link"
+                                        style="border-left: 1px dotted #1D1E29">
+                                    <i class="fa fa-paper-plane" style="color: #1D1E29"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyrights -->
+        <div class="bg-light py-4">
+            <div class="container text-center">
+                <p class="text-muted mb-0 py-2">
+                    © 2020 <span class="text-danger">Klook</span> All rights reserved, powered by
+                    <a href="https://www.linkedin.com/in/plabon-asad/" target="_blank" class="text-warning">Plabon
+                        Asad</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</section>
+
+<!-- Back to top button -->
+<a id="back-to-top" href="#" class="btn bg-dark btn-md back-to-top text-white" role="button" style="display: inline;">
+    <i class="fa fa-chevron-up"></i>
+</a>
+<script type="text/javascript">
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#back-to-top').fadeIn();
+            } else {
+                $('#back-to-top').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 400);
+            return false;
+        });
+    })
+</script>
+
+</body>
+</html>

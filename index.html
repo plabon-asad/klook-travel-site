@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klook Travel - Activities, tours, attractions and things to do</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <!--    Date range-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+</head>
+<body>
+
+<!-- Navbar -->
+<section class="nav-wrap ios-crystal-bg">
+    <div class="nav-container">
+        <nav class="navbar bg-faded">
+            <div class="container">
+                <ul class="nav pull-sm-left">
+                    <li class="nav-item">
+                        <a class="nav-link nav-logo" href="index.html">Klook</a>
+                    </li>
+
+                </ul>
+                <ul class="nav nav-mid">
+                    <li class="nav-item pack-li">
+                        <a class="nav-link" href="#trending-pack">Pakeges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="coming-soon.html">Destination</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blogs</a>
+                    </li>
+                </ul>
+                <ul class="nav pull-sm-right">
+                    <li class="nav-item">
+                        <a class="nav-link login-btn" data-toggle="modal" href="#loginModal">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#regModal" data-toggle="modal">Register</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+
+    </div>
+
+</section>
+
+<!--  Smooth Scrolling with offset -->
+<script type="text/javascript">
+    $(function () {
+        $('.pack-li a').click(function (e) {
+            var linkHref = $(this).attr("href");
+            var idElement = linkHref.substr(linkHref.indexOf("#"));
+            $('html, body').animate({
+                scrollTop: $(idElement).offset().top - 80
+            }, 1000);
+            return false;
+        });
+    })
+</script>
+
+<!-- Slider -->
+<section class="main-slider">
+    <div class="slider-wrap">
+        <div class="slider-container">
+<!--            data-interval="true"-->
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="background-image: url(./img/slide-1.jpeg);">
+                        <!-- <img src="./img/slide-1.jpeg" class="d-block w-100" alt="..."> -->
+                        <div class="item-content">
+                            <div class="title">Travelling is fun and it offer many unique experience.</div>
+                            <!-- <div class="subtitle">This is subtitle</div> -->
+                            <div class="para">
+                                No matter even if you live in a vibrant city or have a very active social life,
+                                travelling can help you to be more satisfied
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item " style="background-image: url(./img/slide-2.jpeg);">
+                        <!-- <img src="./img/slide-2.jpeg" class="d-block w-100" alt="..."> -->
+                        <div class="item-content">
+                            <div class="title">Visiting different places all around the world</div>
+                            <!-- <div class="subtitle">This is subtitle</div> -->
+                            <div class="para">
+                                You want to travel but due to their busy routines they fail to find time for travelling.
+                                Slogans for travel are the best way to motivate.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url(./img/slide-3.jpeg);">
+                        <!-- <img src="./img/slide-3.jpeg" class="d-block w-100" alt="..."> -->
+                        <div class="item-content">
+                            <div class="title">Travel is the only thing you buy that makes you rich</div>
+                            <!-- <div class="subtitle">This is subtitle</div> -->
+                            <div class="para">
+                                Go where you feel the most alive, Life is either a daring adventure or NOTHING The world
+                                is yours
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url(./img/blog-banner3.jpg);">
+                        <!-- <img src="./img/slide-3.jpeg" class="d-block w-100" alt="..."> -->
+                        <div class="item-content">
+                            <div class="title">Travel is the only thing you buy that makes you rich</div>
+                            <!-- <div class="subtitle">This is subtitle</div> -->
+                            <div class="para">
+                                Go where you feel the most alive, Life is either a daring adventure or NOTHING The world
+                                is yours
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Search section -->
+<section class="search-wrap">
+    <div class="search-container container">
+        <div class="form-wrap">
+            <form action="#" method="post">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row search-bg">
+                            <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                <select class="form-control search-slt search-left-btn" id="exampleFormControlSelect1">
+                                    <option>Travel Category</option>
+                                    <option>Cat one</option>
+                                    <option>Cat two</option>
+                                    <option>Cat Three</option>
+                                    <option>Cat Four</option>
+                                    <option>Cat Five</option>
+                                    <option>Cat Six</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                <input type="text" class="form-control search-slt search-mid-btn"
+                                       placeholder="Place...">
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                <input id="datepicker" name="dates" type="text"
+                                       class="form-control search-slt search-right-btn"
+                                       placeholder="Days">
+                            </div>
+
+                            <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                <button type="button" class="btn btn-danger wrn-btn btn-block">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+
+        let datePicker = $('#datepicker[name="dates"]');
+        datePicker.daterangepicker({
+            showDropdowns: true,
+        });
+
+        datePicker.val('');
+        datePicker.attr("placeholder", "Days...");
+
+    </script>
+</section>
+
+<!-- Trending package -->
+<section id="trending-pack" class="trending-pack">
+    <div class="tp-wrap">
+        <div class="tp-container container py-5">
+            <div class="packages">
+                <div class="pack-header">
+                    <div class="row mb-2">
+                        <div class="col-lg-8">
+                            <h4>Trending Packages</h4>
+                        </div>
+                        <div class="col-lg-4">
+                            <form class="trend-pack-form" action="#">
+                                <div class="row">
+                                    <div class="col-lg-4 p-0">
+                                        <input id="pack-datepicker" name="dates" type="text"
+                                               class="form-control trending-input"
+                                               placeholder="Days">
+                                    </div>
+                                    <div class="col-lg-4 p-0">
+                                        <input id="amount-range" name="dates" type="text"
+                                               class="form-control trending-input"
+                                               placeholder="Budget">
+                                    </div>
+                                    <div class="col-lg-4 p-0">
+                                        <button class="btn btn-filter">Filter</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="pack-items" class="pack-items">
+                    <!-- Team item-->
+                    <div class="card">
+                        <div class="card-img">
+                            <a href="coming-soon.html"><img class="card-img-top" src="img/blog1.jpg" alt="Card image cap"></a>
+                        </div>
+                        <div class="card-body p-3">
+                            <div class="item-content">
+                                <div class="title">The Signature at MGM</div>
+                                <div class="star">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="rating">
+                                    4.4<span>/5</span>
+                                </div>
+                                <div class="review">
+                                    | <span>1k</span> reviews
+                                </div>
+                                <div class="old-amount">
+                                    <span>500$</span>
+                                </div>
+                                <div class="amount">
+                                    <span>300$</span>
+                                </div>
+                                <div class="available-time">
+                                    Available from <span>18 sep 2020</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End-->
+
+                    <!-- Team item-->
+                    <div class="card">
+                        <div class="card-img">
+                            <a href="coming-soon.html"><img class="card-img-top" src="img/blog2.jpg" alt="Card image cap"></a>
+                        </div>
+                        <div class="card-body p-3">
+                            <div class="item-content">
+                                <div class="title">The Signature at MGM</div>
+                                <div class="star">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="rating">
+                                    4.4<span>/5</span>
+                                </div>
+                                <div class="review">
+                                    | <span>1k</span> reviews
+                                </div>
+                                <div class="old-amount">
+                                    <span>500$</span>
+                                </div>
+                                <div class="amount">
+                                    <span>300$</span>
+                                </div>
+                                <div class="available-time">
+                                    Available from <span>18 sep 2020</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End-->
+                    <!-- Team item-->
+                    <div class="card">
+                        <div class="card-img">
+                            <a href="coming-soon.html"><img class="card-img-top" src="img/blog3.jpg" alt="Card image cap"></a>
+
+                        </div>
+                        <div class="card-body p-3">
+                            <div class="item-content">
+                                <div class="title">The Signature at MGM</div>
+                                <div class="star">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="rating">
+                                    4.4<span>/5</span>
+                                </div>
+                                <div class="review">
+                                    | <span>1k</span> reviews
+                                </div>
+                                <div class="old-amount">
+                                    <span>500$</span>
+                                </div>
+                                <div class="amount">
+                                    <span>300$</span>
+                                </div>
+                                <div class="available-time">
+                                    Available from <span>18 sep 2020</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End-->
+                    <!-- Team item-->
+                    <div class="card">
+                        <div class="card-img">
+                            <a href="coming-soon.html"><img class="card-img-top" src="img/blog4.jpg" alt="Card image cap"></a>
+                        </div>
+                        <div class="card-body p-3">
+                            <div class="item-content">
+                                <div class="title">The Signature at MGM</div>
+                                <div class="star">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="rating">
+                                    4.4<span>/5</span>
+                                </div>
+                                <div class="review">
+                                    | <span>1k</span> reviews
+                                </div>
+                                <div class="old-amount">
+                                    <span>500$</span>
+                                </div>
+                                <div class="amount">
+                                    <span>300$</span>
+                                </div>
+                                <div class="available-time">
+                                    Available from <span>18 sep 2020</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End-->
+                    <!-- Team item-->
+                    <div class="card">
+                        <div class="card-img">
+                            <a href="coming-soon.html"><img class="card-img-top" src="img/blog1.jpg" alt="Card image cap"></a>
+                        </div>
+                        <div class="card-body p-3">
+                            <div class="item-content">
+                                <div class="title">The Signature at MGM</div>
+                                <div class="star">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="rating">
+                                    4.4<span>/5</span>
+                                </div>
+                                <div class="review">
+                                    | <span>1k</span> reviews
+                                </div>
+                                <div class="old-amount">
+                                    <span>500$</span>
+                                </div>
+                                <div class="amount">
+                                    <span>300$</span>
+                                </div>
+                                <div class="available-time">
+                                    Available from <span>18 sep 2020</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End-->
+                    <!-- Team item-->
+                    <div class="card">
+                        <div class="card-img">
+                            <a href="coming-soon.html"><img class="card-img-top" src="img/blog2.jpg" alt="Card image cap"></a>
+                        </div>
+                        <div class="card-body p-3">
+                            <div class="item-content">
+                                <div class="title">The Signature at MGM</div>
+                                <div class="star">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="rating">
+                                    4.4<span>/5</span>
+                                </div>
+                                <div class="review">
+                                    | <span>1k</span> reviews
+                                </div>
+                                <div class="old-amount">
+                                    <span>500$</span>
+                                </div>
+                                <div class="amount">
+                                    <span>300$</span>
+                                </div>
+                                <div class="available-time">
+                                    Available from <span>18 sep 2020</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End-->
+                    <!-- Team item-->
+                    <div class="card">
+                        <div class="card-img">
+                            <a href="coming-soon.html"><img class="card-img-top" src="img/blog4.jpg" alt="Card image cap"></a>
+                        </div>
+                        <div class="card-body p-3">
+                            <div class="item-content">
+                                <div class="title">The Signature at MGM</div>
+                                <div class="star">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="rating">
+                                    4.4<span>/5</span>
+                                </div>
+                                <div class="review">
+                                    | <span>1k</span> reviews
+                                </div>
+                                <div class="old-amount">
+                                    <span>500$</span>
+                                </div>
+                                <div class="amount">
+                                    <span>300$</span>
+                                </div>
+                                <div class="available-time">
+                                    Available from <span>18 sep 2020</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End-->
+                    <!-- Team item-->
+                    <div class="card">
+                        <div class="card-img">
+                            <a href="coming-soon.html"><img class="card-img-top" src="img/blog3.jpg" alt="Card image cap"></a>
+                        </div>
+                        <div class="card-body p-3">
+                            <div class="item-content">
+                                <div class="title">The Signature at MGM</div>
+                                <div class="star">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="rating">
+                                    4.4<span>/5</span>
+                                </div>
+                                <div class="review">
+                                    | <span>1k</span> reviews
+                                </div>
+                                <div class="old-amount">
+                                    <span>500$</span>
+                                </div>
+                                <div class="amount">
+                                    <span>300$</span>
+                                </div>
+                                <div class="available-time">
+                                    Available from <span>18 sep 2020</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End-->
+                    <!-- Team item-->
+                    <div class="card">
+                        <div class="card-img">
+                            <a href="coming-soon.html"><img class="card-img-top" src="img/blog1.jpg" alt="Card image cap"></a>
+                        </div>
+                        <div class="card-body p-3">
+                            <div class="item-content">
+                                <div class="title">The Signature at MGM</div>
+                                <div class="star">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="rating">
+                                    4.4<span>/5</span>
+                                </div>
+                                <div class="review">
+                                    | <span>1k</span> reviews
+                                </div>
+                                <div class="old-amount">
+                                    <span>500$</span>
+                                </div>
+                                <div class="amount">
+                                    <span>300$</span>
+                                </div>
+                                <div class="available-time">
+                                    Available from <span>18 sep 2020</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End-->
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            $('#pack-items').slick({
+                draggable: true,
+                autoplay: true, /* this is the new line */
+                autoplaySpeed: 5000,
+                infinite: true,
+                speed: 1500,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                dots: false,
+                prevArrow: false,
+                nextArrow: false,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+        })
+
+        // Date picker
+        let packDatePicker = $('#pack-datepicker[name="dates"]');
+        packDatePicker.daterangepicker({
+            showDropdowns: true,
+        });
+
+        packDatePicker.val('');
+        packDatePicker.attr("placeholder", "Days...");
+    </script>
+</section>
+
+<!--  What Make Us different -->
+<section id="what-make-us-differ">
+    <div class="what-make-us-differ-wrap bg-water">
+        <div class="what-make-us-differ-wrap container py-5">
+            <div class="heading-wrap text-center">
+                <h2>What Makes Us Different? </h2>
+                <p>
+                    We are the sole company which gives you complete transparency. You can visit our office anytime
+                    any day and be sure about our trustworthiness.
+                </p>
+            </div>
+
+            <div id="make-differs" class="text-center">
+                <!-- Team item-->
+                <div class="mb-5 member">
+                    <div class="bg-white rounded shadow-sm py-5 px-4">
+                        <img src="img/fast-customer.png" alt="" width="100"
+                             class="img-fluid mb-3 img-thumbnail slick-img-center">
+                        <div class="mb-3"><b>Fast Customer Support</b></div>
+                        <p>Our customer service will be lively available for you from 10 AM to 10 PM, visit us in
+                            this time.</p>
+                    </div>
+                </div>
+                <!-- End-->
+
+                <!-- Team item-->
+                <div class="mb-5 member">
+                    <div class="bg-white rounded shadow-sm py-5 px-4">
+                        <img src="img/lowest-dollar.png" alt="" width="100"
+                             class="img-fluid mb-3 img-thumbnail slick-img-center">
+                        <div class="mb-3"><b>Lowest Dollar Rate</b></div>
+                        <p>We take only 88 Taka per dollar which is the lowest rate in the market currently, keep
+                            purchasing.</p>
+                    </div>
+                </div>
+                <!-- End-->
+
+                <!-- Team item-->
+                <div class="mb-5 member">
+                    <div class="bg-white rounded shadow-sm py-5 px-4">
+                        <img src="img/auto-order.png" alt="" width="100"
+                             class="img-fluid mb-3 img-thumbnail slick-img-center">
+                        <div class="mb-3"><b>Automatic Order</b></div>
+                        <p>
+                            You can now check product’s prices, place order, complete payment and track the ordered.
+                        </p>
+                    </div>
+                </div>
+                <!-- End-->
+
+                <!-- Team item-->
+                <div class="mb-5 member">
+                    <div class="bg-white rounded shadow-sm py-5 px-4">
+                        <img src="img/various-payment.png" alt="" width="100"
+                             class="img-fluid mb-3 img-thumbnail slick-img-center">
+                        <div class="mb-3"><b>
+                            Various Payment Options
+                        </b></div>
+                        <p>
+                            We give you varieties of options for payment. You can pay using bKash, bank transfer,
+                            card.
+                        </p>
+                    </div>
+                </div>
+                <!-- End-->
+
+                <!-- Team item-->
+                <div class="mb-5 member">
+                    <div class="bg-white rounded shadow-sm py-5 px-4">
+                        <img src="img/auto-order.png" alt="" width="100"
+                             class="img-fluid mb-3 img-thumbnail slick-img-center">
+                        <div class="mb-3"><b>Automatic Order</b></div>
+                        <p>
+                            You can now check product’s prices, place order, complete payment and track the ordered.
+                        </p>
+                    </div>
+                </div>
+                <!-- End-->
+
+
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#make-differs').slick({
+                draggable: true,
+                autoplay: false, /* this is the new line */
+                autoplaySpeed: 2000,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                dots: false,
+                prevArrow: false,
+                nextArrow: false,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+        })
+    </script>
+
+</section>
+
+<!--  Contact Us -->
+<section id="contact-us">
+    <div class="contact-us">
+        <div class="contact-container container py-5">
+            <div class="heading-wrap text-center">
+                <h2>Fill Out the Form</h2>
+                <p>
+                    Please submit your information and we will follow up with you as soon as possible.
+                </p>
+            </div>
+            <div class="row align-items-center mt-5">
+                <div class="col-lg-7">
+                    <grammarly-extension style="position: absolute; top: 0px; left: 0px; pointer-events: none;"
+                                         class="_1KJtL">
+                        <div data-grammarly-part="highlights" class="u_fNK"
+                             style="position: absolute; top: 0px; left: 0px;">
+                            <div style="box-sizing: content-box; top: 319px; left: 16px; width: 633px; height: 158px; position: relative; pointer-events: none; overflow: hidden; border: 0px; border-radius: 0px; padding: 0px; margin: 0px;">
+                                <div style="position: absolute; top: 0px; left: 0px;">
+                                    <div style="height: 1185px; width: 2269px;">
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-grammarly-part="button" class="u_fNK"
+                             style="position: absolute; top: 0px; left: 0px;">
+                            <div style="box-sizing: content-box; top: 319px; left: 16px; width: 633px; height: 158px; position: relative; pointer-events: none; overflow: hidden; border: 0px; border-radius: 0px; padding: 0px; margin: 0px;">
+                                <div style="position: absolute; transform: translate(-100%, -100%); top: 146px; left: 607.4px; width: auto; height: auto; pointer-events: all;">
+                                    <div style="flex-direction: row; display: flex; pointer-events: auto;">
+                                        <div style="position: relative;"></div>
+                                        <div data-grammarly-part="gbutton">
+                                            <div class="_5WizN _1QzSN">
+                                                <div class="_3YmQx">
+                                                    <div title="Protected by Grammarly" class="_3QdKe">&nbsp;</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </grammarly-extension>
+                    <form action="#" class="contact-form text-left">
+                        <div class="form-group mb-4">
+                            <label>Name<sup class="text-primary">✱</sup></label>
+                            <input type="text" name="name" placeholder="e.g. John Smith" class="form-control">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label>Company Email<sup class="text-primary">✱</sup></label>
+                            <input type="text" name="email" placeholder="name@company.com" class="form-control">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label>Subject<sup class="text-primary">✱</sup></label>
+                            <input type="text" name="subject" placeholder="Briefly describe your question"
+                                   class="form-control">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label>Now let's hear the details<sup class="text-primary">✱</sup></label>
+                            <textarea rows="4" name="message" placeholder="Let us know what you need"
+                                      class="form-control" spellcheck="false"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Send message"
+                                   class="btn btn-gradient px-5 rounded-pill shadow-sm">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-5 contact-details mt-5 mt-lg-0">
+                    <div class="box">
+                        <div class="icon d-flex align-items-end"><img
+                                src="images/location.svg" alt=""
+                                class="img-fluid"></div>
+                        <h5>Address</h5>
+                        <p class="text-small font-weight-light">Gulshan-1, Road#3, House#3, Dhaka, Bangladesh</p>
+                    </div>
+                    <div class="box">
+                        <div class="icon d-flex align-items-end"><img
+                                src="images/phone.svg" alt=""
+                                class="img-fluid"></div>
+                        <h5>Call center</h5>
+                        <p class="text-small font-weight-light">This number is toll free if calling from Great
+                            Britain otherwise we advise you to use the contact us form of communication</p><strong
+                            class="text-muted">+88 01719 474127</strong>
+                    </div>
+                    <div class="box">
+                        <div class="icon d-flex align-items-end"><img
+                                src="images/msg.svg" alt=""
+                                class="img-fluid"></div>
+                        <h5>Electronic support</h5>
+                        <p class="text-small font-weight-light">Please feel free to write an email to us.</p>
+                        <ul class="text-left">
+                            <li><a href="mailto:plabondotasad@gmail.com"
+                                   class="text-small text-warning">asad_ku@gmail.com</a></li>
+                            <li><a href="mailto:ku_asad@hotmail.com" class="text-small text-warning">ku_asad@hotmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--  Questions Us -->
+<section id="question-to-us">
+    <div class="question-to-us-wrap bg-waterx">
+        <div class="question-to-container container py-5">
+            <div class="heading-wrap text-center">
+                <h2>Have Questions? Look Here.</h2>
+                <p>
+                    Here are some most frequently asked questions by our customers. Have a look so you get clear
+                    vision regarding our services.
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-9 mx-auto">
+                    <!-- Accordion -->
+                    <div id="accordionExample" class="accordion shadow">
+
+                        <!-- Accordion item 1 -->
+                        <div class="card">
+                            <div id="headingOne" class="card-header bg-white shadow-sm border-0">
+                                <h6 class="mb-0 font-weight-bold">
+                                    <a href="#" data-toggle="collapse" data-target="#collapseOne"
+                                       aria-expanded="true"
+                                       aria-controls="collapseOne"
+                                       class="d-block position-relative text-dark text-uppercase collapsible-link py-2">
+                                        How many days will it take to receive products?
+                                    </a>
+                                </h6>
+                            </div>
+                            <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample"
+                                 class="collapse show">
+                                <div class="card-body p-5">
+                                    <p class="font-weight-light m-0">
+                                        It normally takes 20-25 days for us to receive a product from Aliexpress.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion item 2 -->
+                        <div class="card">
+                            <div id="headingTwo" class="card-header bg-white shadow-sm border-0">
+                                <h6 class="mb-0 font-weight-bold">
+                                    <a href="#" data-toggle="collapse" data-target="#collapseTwo"
+                                       aria-expanded="false"
+                                       aria-controls="collapseTwo"
+                                       class="d-block position-relative collapsed text-dark text-uppercase collapsible-link py-2">
+                                        Is We trustworthy?
+                                    </a>
+                                </h6>
+                            </div>
+                            <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample"
+                                 class="collapse">
+                                <div class="card-body p-5">
+                                    <p class="font-weight-light m-0">
+                                        We are 100% honest with our customers. You will have detailed idea once you
+                                        visit our page and check out our reviews.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion item 3 -->
+                        <div class="card">
+                            <div id="headingThree" class="card-header bg-white shadow-sm border-0">
+                                <h6 class="mb-0 font-weight-bold">
+                                    <a href="#" data-toggle="collapse" data-target="#collapseThree"
+                                       aria-expanded="false"
+                                       aria-controls="collapseThree"
+                                       class="d-block position-relative collapsed text-dark text-uppercase collapsible-link py-2">
+                                        Will I get refund for damaged products?
+                                    </a>
+                                </h6>
+                            </div>
+                            <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample"
+                                 class="collapse">
+                                <div class="card-body p-5">
+                                    <p class="font-weight-light m-0">
+                                        If you receive damaged products and you can give us proof that it was broken
+                                        when you received it, you will get refund.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion item 4 -->
+                        <div class="card">
+                            <div id="headingFour" class="card-header bg-white shadow-sm border-0">
+                                <h6 class="mb-0 font-weight-bold">
+                                    <a href="#" data-toggle="collapse" data-target="#collapseFour"
+                                       aria-expanded="false"
+                                       aria-controls="collapseFour"
+                                       class="d-block position-relative collapsed text-dark text-uppercase collapsible-link py-2">
+                                        Will I get refund if I don’t receive my product?
+                                    </a>
+                                </h6>
+                            </div>
+                            <div id="collapseFour" aria-labelledby="headingFour" data-parent="#accordionExample"
+                                 class="collapse">
+                                <div class="card-body p-5">
+                                    <p class="font-weight-light m-0">
+                                        Yes, if you don’t get your product within the promised days, you will
+                                        receive full refund after 65 days.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion item 5 -->
+                        <div class="card">
+                            <div id="headingFive" class="card-header bg-white shadow-sm border-0">
+                                <h6 class="mb-0 font-weight-bold">
+                                    <a href="#" data-toggle="collapse" data-target="#collapseFive"
+                                       aria-expanded="false"
+                                       aria-controls="collapseFive"
+                                       class="d-block position-relative collapsed text-dark text-uppercase collapsible-link py-2">
+                                        Do I need to pay delivery charge?
+                                    </a>
+                                </h6>
+                            </div>
+                            <div id="collapseFive" aria-labelledby="headingFive" data-parent="#accordionExample"
+                                 class="collapse">
+                                <div class="card-body p-5">
+                                    <p class="font-weight-light m-0">
+                                        Yes, you do. When we send the products to your address, you need to pay us
+                                        delivery charge. In case you take the products from our office, no delivery
+                                        charge needed.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Modal-->
+<div class="login-modal">
+    <div class="modal fade" id="loginModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header ios-crystal-bg">
+                    <span class="modal-title">Login</span>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="form-div">
+                        <form action="/action_page.php">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder=" E-Mail ">
+                            </div>
+                            <div class="">
+                                <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <a href="#forgetModal" data-toggle="modal" title="Reset Password">
+                                    <small>Forgot Password ?</small></a>
+                            </div>
+                            <button type="submit" class="btn btn-danger btn-block mybtn">Submit</button>
+
+                            <a href="#regModal" data-toggle="modal" title="Reset Password">
+                                <small>Want to Registration ?</small></a>
+
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="registration-modal">
+    <div class="modal fade" id="regModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <span class="modal-title">Registration</span>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="form-div">
+                        <form action="/action_page.php">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder=" E-Mail ">
+                            </div>
+                            <div class="form-group">
+                                <input type="phone" class="form-control" id="phone-number" placeholder="Phone ">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="confirm-pwd"
+                                       placeholder="Confirm Password">
+                            </div>
+
+                            <button type="submit" class="btn btn-danger btn-block mybtn">Submit</button>
+
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="forget-modal">
+    <div class="modal fade" id="forgetModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header ios-crystal-bgx">
+                    <span class="modal-title">Forget Password!</span>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="form-div">
+                        <form action="#">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder=" E-Mail ">
+                            </div>
+
+
+                            <button type="submit" class="btn btn-danger btn-block mybtn">Send Reset Link</button>
+
+
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--Modal End-->
+
+<!--Footer-->
+<section class="footer">
+    <footer class="bg-deep-dark">
+        <div class="container py-5">
+            <div class="row py-4">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <a href="index.html" class="nav-logo">Klook</a>
+<!--                    <img src="images/logo.png" alt="Klook logo" width="150" class="mb-3">-->
+                    <p class="font-italic text-white">
+                        Book flights, hotels, trains & rental cars anywhere in the world in just seconds. Get real-time
+                        flight updates, travel info, exclusive deals, and 30% more Trip Coins only!
+
+                    </p>
+                    <ul class="list-inline mt-4">
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank" title="twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank" title="facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank" title="instagram"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank" title="pinterest"><i class="fa fa-pinterest"></i></a></li>
+                        <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><i
+                                class="fa fa-vimeo"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h6 class="text-uppercase font-weight-bold mb-4">Company</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2">
+                            <a href="coming-soon.html" target="_blank">Terms and Condition</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="coming-soon.html" target="_blank">Terms of Use</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="coming-soon.html" target="_blank">Klook Guarantee</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="coming-soon.html" target="_blank">Privacy Policy</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="coming-soon.html" target="_blank">Career</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="coming-soon.html"
+                               target="_blank">Security</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h6 class="text-uppercase font-weight-bold mb-4">Useful Links</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="coming-soon.html">How It Works?</a></li>
+                        <li class="mb-2"><a href="coming-soon.html">Integrations</a></li>
+                        <li class="mb-2"><a href="coming-soon.html">Product Updates</a></li>
+                        <li class="mb-2"><a href="coming-soon.html">Our Pricing</a></li>
+                        <li class="mb-2"><a href="coming-soon.html">Offers</a></li>
+                        <li class="mb-2"><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-lg-0">
+                    <h6 class="text-uppercase font-weight-bold mb-4">Newsletter</h6>
+                    <p class="mb-4 text-white">For any important update, keep in touch. We don't share any info for
+                        company reputation.</p>
+                    <div class="p-1 roundedx bg-white">
+                        <div class="input-group">
+                            <input type="email" placeholder="Enter your email address" aria-describedby="button-addon1"
+                                   class="form-control border-0 shadow-0">
+                            <div class="input-group-append">
+                                <button id="button-addon1" type="submit" class="btn btn-link"
+                                        style="border-left: 1px dotted #1D1E29">
+                                    <i class="fa fa-paper-plane" style="color: #1D1E29"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyrights -->
+        <div class="bg-light py-4">
+            <div class="container text-center">
+                <p class="text-muted mb-0 py-2">
+                    © 2020 <span class="text-danger">Klook</span> All rights reserved, powered by
+                    <a href="https://www.linkedin.com/in/plabon-asad/" target="_blank" class="text-warning">Plabon
+                        Asad</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</section>
+
+<!-- Back to top button -->
+<a id="back-to-top" href="#" class="btn bg-dark btn-md back-to-top text-white" role="button" style="display: inline;">
+    <i class="fa fa-chevron-up"></i>
+</a>
+<script type="text/javascript">
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#back-to-top').fadeIn();
+            } else {
+                $('#back-to-top').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 400);
+            return false;
+        });
+    })
+</script>
+
+</body>
+</html>
